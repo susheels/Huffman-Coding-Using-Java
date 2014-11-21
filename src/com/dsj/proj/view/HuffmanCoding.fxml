@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dsj.proj.controller.HuffmanController">
+   <children>
+      <Label layoutX="223.0" layoutY="20.0" prefHeight="100.0" prefWidth="354.0" text="Huffman Coding">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="input" layoutX="41.0" layoutY="141.0" prefHeight="163.0" prefWidth="712.0" promptText="Enter Message to  be Encoded or Decoded" />
+      <Button fx:id="encode" layoutX="264.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleEncode" prefHeight="38.0" prefWidth="120.0" text="Encode" />
+      <Button fx:id="decode" layoutX="399.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleDecode" prefHeight="38.0" prefWidth="211.0" text="Select Files for Decode" />
+      <TextArea fx:id="output" layoutX="38.0" layoutY="383.0" prefHeight="163.0" prefWidth="712.0" promptText="Output Message" />
+      <Button fx:id="chooseFile" layoutX="38.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleFile" prefHeight="38.0" prefWidth="211.0" text="Choose File for Encoding" />
+      <Label fx:id="labelFile" layoutX="170.0" layoutY="557.0" prefHeight="4.0" prefWidth="458.0" />
+      <Button fx:id="dec" layoutX="628.0" layoutY="314.0" mnemonicParsing="false" onAction="#Decode" prefHeight="38.0" prefWidth="120.0" text="Decode" />
+   </children>
+</AnchorPane>
